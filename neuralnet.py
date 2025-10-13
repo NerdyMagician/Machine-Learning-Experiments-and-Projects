@@ -9,7 +9,8 @@ def int_to_onehot(y , num_labels):
     return ary
 
 class NeuralNetMLP:
-    def _init_(self, num_features, num_hidden, num_classes, random_seed = 123):
+    def __init__(self, num_features, num_hidden, num_classes, random_seed=123):
+
         super().__init__
         self.num_classes = num_classes
         rng = np.random.RandomState(random_seed)
